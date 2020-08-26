@@ -514,7 +514,7 @@ button {
   -ms-flex-pack: center;
   justify-content: center; }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .opponent-stats-label, .player-stats-label {
     font-size: 0.7rem;
     margin: 1rem 0; }
@@ -735,35 +735,54 @@ section.social-links {
         color: #ff00ff; }
       section.social-links ul li:hover form button {
         color: #ff00ff; }
-  section.social-links .credits {
-    margin: 0.25rem 0 0;
-    font-size: 0.7rem;
-    font-family: Arial, Helvetica, sans-serif; }
-    section.social-links .credits p {
-      margin: 0; }
-    section.social-links .credits .pre-hover {
-      display: block;
-      text-align: center; }
-    section.social-links .credits .post-hover {
-      display: none;
-      padding: 0.5rem;
-      background-color: rgba(0, 0, 0, 0.3);
-      text-align: left; }
-      section.social-links .credits .post-hover a {
+      section.social-links ul li:hover .credits .pre-hover {
         color: #ff00ff; }
-    section.social-links .credits:hover .pre-hover {
-      display: none; }
-    section.social-links .credits:hover .post-hover {
-      display: block; }
+      section.social-links ul li .credits {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: 100%; }
+        section.social-links ul li .credits p {
+          margin: 0; }
+        section.social-links ul li .credits .post-hover {
+          display: none;
+          position: absolute;
+          top: 2.5rem;
+          width: 16rem;
+          padding: 0.5rem;
+          background-color: rgba(0, 0, 0, 0.3);
+          font-size: 0.75rem;
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: left; }
+          section.social-links ul li .credits .post-hover a {
+            display: inline;
+            color: #ff00ff; }
+        section.social-links ul li .credits:hover .post-hover {
+          display: block; }
 
 @media (max-width: 500px) {
   section.social-links ul li form button {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  section.social-links ul li .credits .post-hover {
+    right: 0;
+    width: 11.5rem; } }
 
 @media (max-width: 450px) {
   section.social-links ul li {
     width: 1.75rem;
-    height: 1.75rem; } }
+    height: 1.75rem;
+    font-size: 1rem; }
+  section.social-links ul li .credits .post-hover {
+    right: -2.1rem;
+    width: 13rem; } }
 
 .game-over-background {
   display: none;
