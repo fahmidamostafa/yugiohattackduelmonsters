@@ -1,0 +1,64 @@
+section.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  z-index: 5; }
+  section.social-links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0; }
+    section.social-links ul li {
+      list-style: none;
+      width: 2.25rem;
+      height: 2.25rem; }
+      section.social-links ul li a {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        text-decoration: none; }
+      section.social-links ul li form {
+        width: 100%;
+        height: 100%; }
+        section.social-links ul li form button {
+          width: 100%;
+          height: 100%; }
+      section.social-links ul li:hover a {
+        color: #ff00ff; }
+
+@media (max-width: 450px) {
+  section.social-links ul li {
+    width: 1.75rem;
+    height: 1.75rem; } }

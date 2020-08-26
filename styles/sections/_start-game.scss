@@ -1,0 +1,49 @@
+.start-game {
+  display: flex;
+  z-index: 100;
+}
+
+.start-game-instructions {
+  margin-left: 1rem;
+}
+
+.start-game-body {
+  width: 80%;
+}
+
+.start-game-instructions li {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .start-game-instructions {
+    font-size: .9rem;
+    margin-bottom: .5rem;
+  }
+}
+
+@media(max-width: 750px) {
+  .start-game-instruct-heading {
+    font-size: 0.85rem;
+  }
+}
+
+@media(max-width: 500px) {
+  .start-game-heading {
+    font-size: 0.9rem;
+  }
+
+  .start-game-body p {
+    font-size: 0.75rem;
+  }
+
+  .start-game-instructions {
+    font-size: 0.75rem;
+    margin-left: 0;
+    margin-bottom: .3rem;
+  }
+
+  .start-game-instructions li {
+    margin-bottom: .7rem;
+  }
+}

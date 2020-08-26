@@ -1,0 +1,35 @@
+.game-over-background {
+  display: none;
+  width: 100%;
+}
+
+.game-over-body {
+  width: 60%;
+  padding: 3rem
+}
+
+.game-over-message {
+  margin: 1.5rem;
+}
+
+@media (max-width:750px) {
+  .game-over-body {
+    padding: 2rem;
+  }
+
+  .game-over-heading {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width:400px) {
+  .game-over-heading {
+    font-size: 1rem;
+  }
+
+  .game-over-body {
+    font-size: .8rem;
+    padding: 1rem;
+  }
+}
+

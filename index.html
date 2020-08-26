@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-a11y="true"></script>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Yu-Gi-Oh! Attack - Duel Monsters</title>
+</head>
+
+<body>
+  <div class="overlay">
+    <div class="modal-background start-game">
+      <div class="modal-body start-game-body">
+        <h2 class="modal-heading start-game-heading">Yu-Gi-Oh! Attack - Duel Monsters</h2>
+        <h3 class="start-game-instruct-heading">Instructions</h3>
+        <ol class="start-game-instructions">
+          <li>Select a monster from your side.</li>
+          <li>Select a monster from your opponent's side.</li>
+          <li>Attack.</li>
+        </ol>
+        <p>To de-select cards at any time, click on cancel.</p>
+        <p>Your opponent (AI) then needs to complete their turn before you can attack again.</p>
+        <p>Whoever gets the other player's life points down to zero wins!</p>
+        <button class="start-game-button modal-button">Start</button>
+      </div>
+    </div>
+    
+    <div class="modal-background game-over-background">
+      <div class="game-over-body modal-body">
+        <h2 class="modal-heading game-over-heading">GAME OVER!</h2>
+        <p class="game-over-message">The winner is <span class='game-over-winner'></span></p>
+        <button class="game-over-play-again modal-button">Play Again</button>
+      </div>
+    </div>
+    <main class="gameboard">
+      <section class="social-links">
+        <ul>
+          <li>
+            <a
+              href="https://github.com/fahmidamostafa/Yugioh-Attack-Duel-Monsters"
+              target="_blank"
+              rel="noopener noreferrer">
+              <i class="fas fa-code"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://www.fahmidamostafa.com/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <i class="fas fa-briefcase"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/fahmida-mostafa-2a465789/"
+              target="_blank"
+              rel="noopener noreferrer">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <form action="mailto:fahmida.mostafa@gmail.com">
+              <button>
+                <i class="fas fa-envelope"></i>
+              </button>
+            </form>
+          </li>
+        </ul>
+        <div class="credits">
+          <p class="pre-hover"><i class="far fa-copyright"></i></p>
+          <div class="post-hover">
+            <p>
+              © 2020 Fahmida Mostafa & 
+              <a
+                href="https://jonathanwong.dev/"
+                target="_blank"
+                rel="noopener noreferrer">
+                Jonathan Wong
+              </a>.
+            </p>
+            <p>
+              Made using the
+              <a
+                href="https://db.ygoprodeck.com/api-guide/"
+                target="_blank"
+                rel="noopener noreferrer">
+                YGOPRODeck API
+              </a>.
+            </p>
+            <p>Card graphics belong to 4K Media Inc.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="opponent-side gameboard-half">
+        <span class="buttons prev"></span>
+        <span class="buttons next"></span>
+        <div class="opponent-stats">
+          <ul class="stats-list">
+            <li class="opponent-life-points-box">
+              <p class="opponent-life-points life-points">3000</p>
+              <p class="opponent-life-points-label opponent-stats-label">Opp LP</p>
+            </li>
+            <li class="opponent-atk-display-box">
+              <p class="opponent-atk-display atk-points"></p>
+              <p class="opponent-atk-display-label opponent-stats-label">Opp ATK</p>
+            </li>
+          </ul>
+        </div>
+    
+        <ul class="opponent-hand hand">
+          <!-- RENDERED VIA JAVASCRIPT. COMMENTED FOR STRUCTURE AND DOCUMENTATION -->
+          <!-- <li class="opponent-card card" tabindex="0">
+              <img src="" class="opponent-card-img" alt="">
+              <div class="opponent-atk"></div>
+            </li>
+    
+            <li class="opponent-card card" tabindex="0">
+              <img src="" class="opponent-card-img" alt="">
+              <div class="opponent-atk"></div>
+            </li>
+            <li class="opponent-card card" tabindex="0">
+              <img src="" class="opponent-card-img" alt="">
+              <div class="opponent-atk"></div>
+            </li>
+    
+            <li class="opponent-card card" tabindex="0">
+              <img src="" class="opponent-card-img" alt="">
+              <div class="opponent-atk"></div>
+            </li>
+            <li class="opponent-card card" tabindex="0">
+              <img src="" class="opponent-card-img" alt="">
+              <div class="opponent-atk"></div>
+            </li> -->
+        </ul>
+      </section>
+    
+      <section class="player-side gameboard-half">
+        <span class="buttons prev"></span>
+        <span class="buttons next"></span>
+        <ul class="player-hand hand">
+          <!-- RENDERED VIA JAVASCRIPT. COMMENTED FOR STRUCTURE AND DOCUMENTATION -->
+          <!-- <li class="player-card card" tabindex="0">
+              <img src="" class="player-card-img" alt="">
+              <div class="player-atk"></div>
+            </li>
+    
+            <li class="player-card card" tabindex="0">
+              <img src="" class="player-card-img" alt="">
+              <div class="player-atk"></div>
+            </li>
+    
+            <li class="player-card card" tabindex="0">
+              <img src="" class="player-card-img" alt="">
+              <div class="player-atk"></div>
+            </li>
+    
+            <li class="player-card card" tabindex="0">
+              <img src="" class="player-card-img" alt="">
+              <div class="player-atk"></div>
+            </li>
+    
+            <li class="player-card card" tabindex="0">
+              <img src="" class="player-card-img" alt="">
+              <div class="player-atk"></div>
+            </li> -->
+        </ul>
+    
+        <div class="player-stats">
+          <ul class="stats-list">
+            <li class="player-life-points-box">
+              <p class="player-life-points-label player-stats-label">Player LP</p>
+              <p class="player-life-points life-points">3000</p>
+            </li>
+            <li class="player-buttons">
+              <ul class="player-button-list">
+                <li class="player-button-list-item">
+                  <button class="player-atk-button"></button>
+                </li>
+    
+                <li class="player-button-list-item">
+                  <button class="player-cancel-button"></button>
+                </li>
+              </ul>
+            </li>
+            <li class="player-atk-display-box">
+              <p class="player-atk-display-label player-stats-label">Player ATK</p>
+              <p class="player-atk-display atk-points"></p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

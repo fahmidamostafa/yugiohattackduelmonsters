@@ -1,0 +1,66 @@
+.buttons {
+  z-index: 10;
+  text-decoration: none;
+  color: #fff; }
+
+.prev {
+  display: none;
+  position: absolute;
+  left: 8%; }
+  /* .prev::after {
+    content: "<"; } */
+
+.next {
+  position: absolute;
+  right: 5%;
+  display: none; }
+  /* .next::after {
+    content: ">"; } */
+
+/* .next::after, .prev::after {
+  cursor: pointer;
+  border-radius: 30%;
+  padding: 0.3rem;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #fff; } */
+
+button {
+  display: block;
+  padding: 1rem;
+  background: #000099;
+  color: #fff;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  -o-transition: transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+  border-radius: 10px;
+  z-index: 10;
+  position: relative;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
+  cursor: pointer; }
+  button .mail-button {
+    background: #fff; }
+  button:disabled {
+    background: #ababab;
+    color: grey; }
+    button:disabled:hover, button:disabled:focus {
+      z-index: 0;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none; }
+
+@media (max-width: 700px) {
+  .prev {
+    display: block; }
+  .next {
+    display: block; } }
+
+@media (max-width: 500px) {
+  button {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+    font-size: .7rem; } }

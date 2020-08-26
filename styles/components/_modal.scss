@@ -1,0 +1,59 @@
+.modal-background {
+  background: rgba(0,0,0,.4);
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  height: 100vh;
+}
+
+.modal-body {
+  max-height: 100%;
+  margin: auto;
+  padding: 2rem;
+  border: 0.5rem solid $color-black;
+  border-radius: 0.5rem;
+  z-index: 5;
+  position: relative;
+  background-color: $color-blue;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.modal-body hr {
+  margin: 2rem 0;
+}
+
+.modal-body h1, h2, h3 {
+  text-align: center;
+}
+
+.modal-body p {
+  font-size: 0.9rem;
+}
+
+.modal-heading{
+  margin: 0;  
+}
+
+.modal-button {
+  margin: 2.5rem auto 0;
+}
+
+.game-over-play-again.modal-button {
+  margin: 1.5rem auto 0;
+}
+
+@media (max-width: 750px) {
+  .start-game-instruct-heading, .modal-heading{
+    font-size: 0.9rem;
+  }
+
+  .modal-heading {  
+    text-transform: uppercase;
+  }
+}
+
+
+

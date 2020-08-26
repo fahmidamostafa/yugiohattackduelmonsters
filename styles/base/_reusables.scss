@@ -1,0 +1,27 @@
+.visuallyhidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
+
+.highlight {
+  z-index: 2;
+  border: 3px solid red;
+  transform: scale(1.5);
+}
+
+.transform-next {
+  animation: next-card 500ms;
+}
+
+.transform-prev {
+  animation: prev-card 100ms;
+}
+
+@media(max-width: 400px) {
+  .highlight {
+    transform: scale(1.3);
+  }
+}
+
+
+
+
+
+  

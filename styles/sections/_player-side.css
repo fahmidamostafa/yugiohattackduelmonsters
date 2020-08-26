@@ -1,0 +1,70 @@
+.player-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end; }
+
+.player-button-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+.player-atk-button {
+  margin-right: .5rem; }
+
+.player-stats-label {
+  position: absolute;
+  bottom: 3rem; }
+
+.player-atk-display-label {
+  right: 0; }
+
+@media (max-width: 700px) {
+  .player-side .buttons {
+    top: 30%;
+    -webkit-transform: translateY(200%);
+    -ms-transform: translateY(200%);
+    transform: translateY(200%); }
+  .player-card {
+    top: 20%; }
+    .player-card:nth-child(1) {
+      left: calc(40% - 4rem); }
+    .player-card:nth-child(2) {
+      left: calc(45% - 4rem); }
+    .player-card:nth-child(3) {
+      left: calc(50% - 4rem); }
+    .player-card:nth-child(4) {
+      left: calc(55% - 4rem); }
+    .player-card:nth-child(5) {
+      left: calc(60% - 4rem); } }
+
+@media (max-width: 800px) {
+  .player-button-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+  .player-atk-button {
+    margin-right: 0; } }
+
+@media (max-width: 350px) {
+  .player-card {
+    top: 10%; } }

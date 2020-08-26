@@ -1,0 +1,21 @@
+.gameboard {
+  position: relative;
+  height: 100vh;
+  min-height: 31rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+//Styling for each player's part of the board
+.gameboard-half {
+  height: 50%;
+  position: relative;
+}
+
+//Stylings for opponent and player hands
+.hand {
+  height: calc(100% - 3.6rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

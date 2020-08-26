@@ -1,0 +1,111 @@
+.player-side {
+  display: flex; 
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.player-buttons {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 0;
+}
+
+.player-button-list {
+  display: flex;
+  align-items: flex-end;
+}
+
+.player-atk-button,
+.player-cancel-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-atk-button {
+  margin-right: .5rem;
+  &::before {
+    content: "Attack";
+  }
+  &:hover, &:focus {
+    z-index: 1;
+    transform: translate(-0.4rem, -0.2rem) scale(1.1);
+  }
+}
+
+.player-cancel-button {
+  &::before {
+    content: "Cancel";
+  }
+  &:hover, &:focus {
+    z-index: 1;
+    transform: translate(0.4rem, -0.2rem) scale(1.1);
+  }
+}
+
+.player-stats-label {
+  position: absolute;
+  bottom: 2.6rem;
+}
+
+.player-atk-display-label {
+  right: 0;
+}
+
+@media (max-width: 800px) {
+  .player-atk-button {
+    width: 3.5rem;
+    height: 3.2rem;
+    &::before {
+      content: "🗲";
+    }
+    &:hover, &:focus {
+      transform: translate(-0.2rem, -0.2rem) scale(1.1);
+    }
+  }
+  
+  .player-cancel-button {
+    width: 3.5rem;
+    height: 3.2rem;
+    &::before {
+      content: "×";
+    }
+    &:hover, &:focus {
+      transform: translate(0.2rem, -0.2rem) scale(1.1);
+    }
+  }
+}
+
+ @media(max-width: 350px) {
+  .player-card{
+    top: 10%;
+  }
+}
+
+@media (max-width: 800px) {
+  .player-side {
+    .buttons {
+      bottom: calc(3.6rem + (((100% - 3.6rem) / 2) - (1.6rem / 2)));
+    }
+  } 
+
+  .player-card {
+    bottom: calc(3.6rem + (((100% - 3.6rem) / 2) - (9rem / 2)));
+
+    &:nth-child(1) {    
+        left: calc(40% - 4rem);
+    }
+    &:nth-child(2) {
+        left: calc(45% - 4rem);
+    }
+    &:nth-child(3) {
+        left: calc(50% - 4rem);
+    }
+    &:nth-child(4) {
+        left: calc(55% - 4rem);
+    }
+    &:nth-child(5) {
+        left: calc(60% - 4rem);
+    }
+  }
+}

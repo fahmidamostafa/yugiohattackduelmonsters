@@ -1,0 +1,18 @@
+@keyframes prev-card {
+  0% {transform: translateX(2.5rem); opacity: 0; }
+  20% {transform: translateX(2rem); opacity: 0.10;}
+  40% {transform: translateX(1.5rem); opacity: 0.20;}
+  60% {transform: translateX(1rem); opacity: 0.40;}
+  80% {transform: translateX(0.5rem); opacity: 0.80;}
+  100% {transform: translateX(0); opacity: 1;}
+}
+
+@keyframes next-card {
+  0% {transform: translateX(0); opacity: 1; }
+  20% {transform: translateX(1rem); opacity: 0.80;}
+  40% {transform: translateX(2rem); opacity: 0.40;}
+  60% {transform: translateX(3rem); opacity: 0.20;}
+  80% {transform: translateX(4rem); opacity: 0.10;}
+  100% {transform: translateX(5rem); opacity: 0;}
+}
+

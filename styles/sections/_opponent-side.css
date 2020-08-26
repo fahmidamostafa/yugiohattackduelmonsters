@@ -1,0 +1,40 @@
+.opponent-transition-delay {
+  -webkit-transition: .2s all 2s;
+  -o-transition: .2s all 2s;
+  transition: .2s all 2s; }
+
+.opponent-atk-display-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.opponent-stats-label {
+  top: 2.6rem;
+  position: absolute; }
+
+.opponent-atk-display-label {
+  right: 0; }
+
+@media (max-width: 700px) {
+  .opponent-side .buttons {
+    z-index: 10;
+    top: 50%; }
+  .opponent-card {
+    top: 5rem; }
+    .opponent-card:nth-child(1) {
+      left: calc(40% - 4rem); }
+    .opponent-card:nth-child(2) {
+      left: calc(45% - 4rem); }
+    .opponent-card:nth-child(3) {
+      left: calc(50% - 4rem); }
+    .opponent-card:nth-child(4) {
+      left: calc(55% - 4rem); }
+    .opponent-card:nth-child(5) {
+      left: calc(60% - 4rem); } }
